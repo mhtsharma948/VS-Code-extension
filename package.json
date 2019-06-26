@@ -1,0 +1,22 @@
+{
+    "name": "inot",
+    "displayName": "inot",
+    "description": "",
+    "version": "0.0.3",
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "publisher": "mohit",
+    "categories": [
+        "Extension Packs"
+    ],
+    "scripts": {
+        "vscode:uninstall": "node ./out/src/lifecycle"
+    },
+    "extensionPack": [ 
+        "anthony-y.package-to-readme", 
+        "eamodio.gitlens", 
+        "Gruntfuggly.todo-tree",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ]
+}

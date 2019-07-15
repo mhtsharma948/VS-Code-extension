@@ -1,0 +1,98 @@
+{
+    "pagination": {
+        "prefix": "IN-pagination",
+        "body": [
+            "paginationInfo: Paginate = {",
+            "\tpageSize: this.appCacheService.userSettings.display.pageSize,",
+            "\ttotalCount:$1,",
+            "\tcurrentPage:$2",
+            "};"
+        ],
+        "description": "Pagination config"
+    },
+    "listConfig": {
+        "prefix": "IN-list",
+        "body": [
+            "config: ListData = {",
+            "\ttitle:$1,",
+            "\thasHeader: true,",
+            "\theaderActions: [$2],",
+            "\tactions: [$3],",
+            "\thasPaginate: true,",
+            "\thasTooltip: true,",
+            "\tallowSearch: false",
+            "};"
+        ],
+        "description": "List config"
+    },
+    "formOptions": {
+        "prefix": "IN-formio",
+        "body": [
+            "formOptions: FormConfig = {",
+            "\tform: {},",
+            "\tsubmission: { data: {} },",
+            "\tonSubmit: data => {",
+            "\t},",
+            "\tbeforeSubmit: (event, callback) => {",
+            "\t}",
+            "};"
+        ],
+        "description": "Formio configurations"
+    },
+    "treeGrid Config": {
+        "prefix": "IN-tree-grid",
+        "body": [
+            "gridConfig: TreeGridConfig = {",
+            "\tchildPath: '$1',",
+            "\tcolumnsData: [",
+            "\t\t{ name: '$2', mapKey: '$3', isDropDown: $4, isEditable: $5, width: '3*' }",
+            "\t]",
+            "};"
+        ],
+        "description": "Tree grid config"
+    },
+    "metadata explorer config": {
+        "prefix": "IN-metadata-explorer",
+        "body": [
+            "metadataConfig: MetadataExplorer = {",
+            "\ttitle: '$1',",
+            "\thasContextMenu: $2,",
+            "\tshowValue: $3,",
+            "\thasHeader: $4,",
+            "\tcanDrag: $5,",
+            "\theaderActions: []",
+            "};"
+        ],
+        "description": "Metadata explorer config"
+    },
+    "formio JSON": {
+        "prefix": "IN-formio-json",
+        "body": [
+            "{",
+            "\ttype: '$1',",
+            "\tinput: true,",
+            "\tinputType: 'text',",
+            "\tlabel: '$2',",
+            " \tkey: '$3',",
+            "\terrorLabel: $4,",
+            "\tplaceholder: this.translationService.get('$5'),",
+            "\tpersistent: true,",
+            "\tautoFocus: true,",
+            "\tdata: {",
+            "\t\tvalues: $6",
+            "\t},",
+            "\tconfig: {",
+            "\t\tlabelProp: '$7',",
+            "\t\tvalueProp: '$8'",
+            " \tvalidate: {",
+            "\t\trequired: $9,",
+            "\t\tmaxLength: $10",
+            "\t}",
+            "\tdisabled: $11,",
+            "\thidden: $12,",
+            "\tcustomConditional: $13",
+            "}"
+        ],
+        "description": "Formio JSON"
+    }
+}

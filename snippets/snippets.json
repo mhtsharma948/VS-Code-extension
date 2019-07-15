@@ -1,0 +1,77 @@
+{
+    "ss": {
+        "prefix": "!4",
+        "body": [
+            "const formOptions: FormConfig = {",
+            "   title: 'Title',",
+            "   form,",
+            "   beforeSubmit: (submission, callback) => {",
+            "       callback(undefined, submission);",
+            "   },",
+            "   onSubmit: submission => {",
+            "       cb($1: test);",
+            "   },",
+            "$0",
+            "   submission: { data: {$2  } },",
+            "   submitButtonTitle: 'Save' $3",
+            "};",
+            "this.popupService.showForm(formOptions, Size.medium);"
+        ],
+        "description": "test done."
+    },
+    "include": {
+        "prefix": "!3",
+        "body": [
+            "<script type=\"text/javascript\" src=\"http://tst.dynamsoft.com/libs/dwt/14.0/dynamsoft.webtwain.min.js\"> </script>"
+        ],
+        "description": "Include Dynamic Web TWAIN JavaScript library."
+    },
+    "scan module": {
+        "prefix": "!2",
+        "body": [
+            "<input type=\"button\" value=\"Scan\" onclick=\"AcquireImage();\" />",
+            "<div id=\"dwtcontrolContainer\"></div>\n",
+            "<script type=\"text/javascript\">",
+            "function AcquireImage() {",
+            "\tvar DWObject = Dynamsoft.WebTwainEnv.GetWebTwain('dwtcontrolContainer');",
+            "\tDWObject.IfDisableSourceAfterAcquire = true;",
+            "\tvar bSelected = DWObject.SelectSource(); \n",
+            "\tif(bSelected) {",
+            "\t\tvar OnAcquireImageSuccess, OnAcquireImageFailure;",
+            "\t\tOnAcquireImageSuccess = OnAcquireImageFailure = function () {",
+            "\t\tDWObject.CloseSource();",
+            "\t};\n",
+            "\tDWObject.OpenSource();",
+            "\tDWObject.AcquireImage(OnAcquireImageSuccess, OnAcquireImageFailure);  ",
+            "\t}",
+            "}",
+            "</script>"
+        ],
+        "description": "A simple web scanning module."
+    },
+    "full sample": {
+        "prefix": "!1",
+        "body": [
+            "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Hello World</title>",
+            "\t<script type=\"text/javascript\" src=\"http://tst.dynamsoft.com/libs/dwt/14.0/dynamsoft.webtwain.min.js\"> </script>\n</head>\n\n<body>",
+            "\t<input type=\"button\" value=\"Scan\" onclick=\"AcquireImage();\" />",
+            "\t<div id=\"dwtcontrolContainer\"></div>\n",
+            "\t<script type=\"text/javascript\">",
+            "\tfunction AcquireImage() {",
+            "\t\tvar DWObject = Dynamsoft.WebTwainEnv.GetWebTwain('dwtcontrolContainer');",
+            "\t\tDWObject.IfDisableSourceAfterAcquire = true;",
+            "\t\tvar bSelected = DWObject.SelectSource(); \n",
+            "\t\tif(bSelected) {",
+            "\t\t\tvar OnAcquireImageSuccess, OnAcquireImageFailure;",
+            "\t\t\tOnAcquireImageSuccess = OnAcquireImageFailure = function () {",
+            "\t\t\tDWObject.CloseSource();",
+            "\t\t};\n",
+            "\t\tDWObject.OpenSource();",
+            "\t\tDWObject.AcquireImage(OnAcquireImageSuccess, OnAcquireImageFailure);  ",
+            "\t\t}",
+            "\t}",
+            "\t</script>\n</body>\n</html>"
+        ],
+        "description": "The full sample code - hello world."
+    }
+}

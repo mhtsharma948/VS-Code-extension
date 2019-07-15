@@ -2,14 +2,32 @@
     "name": "inot",
     "displayName": "inot",
     "description": "",
-    "version": "0.0.3",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.35.0"
     },
     "publisher": "mohit",
     "categories": [
+        "Snippets",
         "Extension Packs"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mhtsharma948/VS-Code-extension"
+    },
+    "icon": "Mohit.png",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/htmlSnippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/tsSnippets.json"
+            }
+        ]
+    },
     "scripts": {
         "vscode:uninstall": "node ./out/src/lifecycle"
     },

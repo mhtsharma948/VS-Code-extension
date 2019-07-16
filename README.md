@@ -1,24 +1,34 @@
-# Inot
+# in-snippets README
 
-VS Code Extension which contains code snippets.
+**in-snippets** is the VS code Extension which provide code snippets and install extensions.
 
-## Getting Started
+## Features
+Following are the prefixes for IN projects.
 
-Snippets and Extensions.
+|Project|Type|Prefix|Description|
+|---|---|---|---|
+|Client-app|TS|MS-pagination|Pagination config|
+|Client-app|TS|MS-list|List config|
+|Client-app|TS|MS-formio|Formio configurations|
+|Client-app|TS|MS-tree-grid|Tree grid config|
+|Client-app|TS|MS-metadata-explorer|Metadata explorer config|
+|Client-app|TS|MS-formio-json|Formio JSON|
+|Client-app|HTML|MS-list-template |List template|
+|Client-app|HTML|MS-formio-template |Formio template|
+|Client-app|HTML|MS-tree-grid-template |tree grid template|
+|Client-app|HTML|MS-metadata-explorer-template|Metadata explorer template|
+|Client-app|HTML|MS-menu-template|Menu template|
 
-### Prerequisites
+## Known Issues
 
-What things you need to install the software and how to install them
+None
 
-```
-Give examples
-```
+## Release Notes
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. 
+### 0.0.1
 
-## Authors
+This release contains code snippets and extensions for client app.
 
-* **Mohit Sharma** - [mhtsharma](https://mhtsharma.me)
-
+## Author
+Mohit Sharma ([mhtsharma](http://mhtsharma.me))

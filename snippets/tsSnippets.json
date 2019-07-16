@@ -1,6 +1,6 @@
 {
     "pagination": {
-        "prefix": "IN-pagination",
+        "prefix": "MS-pagination",
         "body": [
             "paginationInfo: Paginate = {",
             "\tpageSize: this.appCacheService.userSettings.display.pageSize,",
@@ -11,7 +11,7 @@
         "description": "Pagination config"
     },
     "listConfig": {
-        "prefix": "IN-list",
+        "prefix": "MS-list",
         "body": [
             "config: ListData = {",
             "\ttitle:$1,",
@@ -26,7 +26,7 @@
         "description": "List config"
     },
     "formOptions": {
-        "prefix": "IN-formio",
+        "prefix": "MS-formio",
         "body": [
             "formOptions: FormConfig = {",
             "\tform: {},",
@@ -40,7 +40,7 @@
         "description": "Formio configurations"
     },
     "treeGrid Config": {
-        "prefix": "IN-tree-grid",
+        "prefix": "MS-tree-grid",
         "body": [
             "gridConfig: TreeGridConfig = {",
             "\tchildPath: '$1',",
@@ -52,7 +52,7 @@
         "description": "Tree grid config"
     },
     "metadata explorer config": {
-        "prefix": "IN-metadata-explorer",
+        "prefix": "MS-metadata-explorer",
         "body": [
             "metadataConfig: MetadataExplorer = {",
             "\ttitle: '$1',",
@@ -66,7 +66,7 @@
         "description": "Metadata explorer config"
     },
     "formio JSON": {
-        "prefix": "IN-formio-json",
+        "prefix": "MS-formio-json",
         "body": [
             "{",
             "\ttype: '$1',",

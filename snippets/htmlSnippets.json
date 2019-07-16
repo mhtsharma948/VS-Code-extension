@@ -1,34 +1,34 @@
 {
     "list template": {
-        "prefix": "IN-list-template",
+        "prefix": "MS-list-template",
         "body": [
             "<in-metadata-list-box [config]='config' [itemsSource]='$1' [actionMenus]='$2' [paginate]='$3' (updatePageData)='$4' (mapListData)='$5'></in-metadata-list-box>"
         ],
         "description": "List template"
     },
     "formio template": {
-        "prefix": "IN-formio-template",
+        "prefix": "MS-formio-template",
         "body": [
             "<formio #formid [form]='formOptions.form' (change)='$1' [submission]='formOptions.submission' (submit)='$2' (render)='$3'></formio>"
         ],
         "description": "Formio template"
     },
     "tree grid template": {
-        "prefix": "IN-tree-grid-template",
+        "prefix": "MS-tree-grid-template",
         "body": [
             "<in-tree-grid #flexComponent [config]='gridConfig' [itemsSource]='$1' (formattingItem)='$2' (beginEdit) ='$3' (onCellEditEnded)='$4' (onLoad)='$5'></in-tree-grid>"
         ],
         "description": "Tree grid template"
     },
     "metadata explorer template": {
-        "prefix": "IN-metadata-explorer-template",
+        "prefix": "MS-metadata-explorer-template",
         "body": [
             "<in-metadata-explorer #metadataTree [config]='metadataConfig'></in-metadata-explorer>"
         ],
         "description": "Metadata explorer template"
     },
     "menu template": {
-        "prefix": "IN-menu-template",
+        "prefix": "MS-menu-template",
         "body": [
             "<wj-menu #ctxMenu style='display:none' [itemsSource]='$1' [displayMemberPath]='$2'",
             "[commandPath]='Command' [commandParameterPath]='Value' [isAnimated]= 'false'>",
